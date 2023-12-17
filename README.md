@@ -9,7 +9,7 @@
 
 Установка зависимостей:
 ```bash
-pip3 install telethon
+pip3 install -r req.txt
 ```
 
 ## Использование
