@@ -35,6 +35,9 @@ async def main(channel, file_path, caption):
 def multiple_files_send(channel, files_path, caption):
     file_names = (os.listdir(files_path))   # Extract file names
     for filename in file_names:
+        caption = re.sub('windows64_8_', '1C Server Windows x64 8.', filename)  #
+        caption = re.sub('_', '.', caption)                                     # Version caption create
+        caption = re.sub('.rar', '', caption)                                   #
         file_path = files_path + '/' + filename                                 # Absolute path to file
         with client:
             client.loop.run_until_complete(main(channel, file_path, caption))   # Call main function
