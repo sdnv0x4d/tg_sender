@@ -16,7 +16,7 @@ pip3 install -r req.txt
 
 Запуск tg_sender с указанием пути до файла, подписи, ссылки на канал, API ID, API Hash: 
 ```bash
-python3 main.py -p /mnt/1c_distr/ --channel @sdnv_funkhole --caption 'Hello World!👋' --api-id 12345 --api-hash 0123456789abcdef0123456789abcdef
+python3 main.py -f /srv/my_file.txt --channel @sdnv_funkhole --caption 'Hello World!👋' --api-id 12345 --api-hash 0123456789abcdef0123456789abcdef
 ```
 > При первом запуске необходимо произвести интерактивную аутентификацию. Будет создан файл `uploader.session`
 
